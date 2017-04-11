@@ -35,8 +35,8 @@ def training_step(i, update_train_data, update_test_data):
         print("   test accuracy:" + str(a) + " test loss:" + str(c))
     sess.run(train_step, feed_dict={X: batch_X, Y_: batch_Y})
 
-for i in range(0, 6001):
-    training_step(i, (i % 100) is 0, (i % 6000) is 0)
+for i in range(0, 15001):
+    training_step(i, (i % 100) is 0, (i % 15000) is 0)
 
       
     
